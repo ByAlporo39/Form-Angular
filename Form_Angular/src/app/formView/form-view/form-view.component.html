@@ -1,0 +1,36 @@
+<div class="card highlight-card card-small">
+  <p>Users</p>
+</div>
+
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>DNI</th>
+      <th>NOMBRE</th>
+      <th>SURNAME</th>
+      <th>PHONE</th>
+      <th>EMAIL</th>
+      <th>GENDER</th>
+      <th>BIRTHDAY</th>
+
+      <th>OPTIONAL INFORMATION</th>
+      <th>FORM TITLE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let user of user">
+      <tr>
+        <td>{{user.dni}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.surname}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.birthday}}</td>
+        <td>{{user.experience}}</td>
+        <td>{{user.work}}</td>
+
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
